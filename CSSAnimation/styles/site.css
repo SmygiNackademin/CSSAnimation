@@ -1,0 +1,31 @@
+﻿img {
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   { top: 0px;left: 0px;width: 100px;transform: rotate(360deg) }
+    25%  { top: 0px;left: 1000px;width: 500px;transform: rotate(90deg) }
+    50%  { top: 100px;left: 500px;width: 150px;transform: rotate(180deg) }
+    75%  { top: 600px;left: 0px;width: 290px;transform: rotate(90deg) }
+    100% { top: 0px;left: 0px;width: 50px;transform: rotate(360deg) }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   { top: 0px;left: 0px;width: 100px;transform: rotate(360deg) }
+    25%  { top: 0px;left: 1000px;width: 500px;transform: rotate(90deg) }
+    50%  { top: 100px;left: 500px;width: 150px;transform: rotate(180deg) }
+    75%  { top: 600px;left: 0px;width: 290px;transform: rotate(90deg) }
+    100% { top: 0px;left: 0px;width: 50px;transform: rotate(360deg) }
+}
